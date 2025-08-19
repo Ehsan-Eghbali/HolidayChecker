@@ -19,7 +19,7 @@ func main() {
 	flag.Parse()
 
 	if *dateArg == "" || *countriesArg == "" {
-		log.Fatal("usage: holidaychecker -date=YYYY/MM/DD -countries=ES,FR,IT")
+		log.Fatal("usage: holidayChecker -date=YYYY/MM/DD -countries=ES,FR,IT")
 	}
 
 	t, err := time.Parse("2006/01/02", *dateArg)
